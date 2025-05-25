@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset=UTF-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- site title -->
+  <title>Z0N3 | Stats</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
+
+
+  <!-- css and font link -->
+  <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css rel=stylesheet>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;600&display=swap" rel=stylesheet>
+  <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css rel=stylesheet>
+  <!-- main css -->
+  <link rel="stylesheet" href="/assets/css/custom.css">
+
+</head>
+  
+  <body>
+    <!------------------------------------------ Navbar section ------------------------->
+       <div class="Navbarr navbar-light">
+         <div class="container">
+           <nav class="navbar">
+             <div class="navbar-collapse">
+               <ul class="navbar-nav">
+                  <!-- Navbar items -->
+                 <li class="nav-item" id="home">
+                   <a class="nav-link" ainteresta-current="page" href="../index.html">Home</a>
+                 </li>
+                 <li class="nav-item" id="rankings">
+                    <a class="nav-link" href="/pages/rankings.html">Rankings</a>
+                  </li>
+                  <li class="nav-item" id="top-zon3-players">
+                    <a class="nav-link" href="/pages/top-zon3-players.html">Top Z0N3 Players</a>
+                  </li>
+                  <li class="nav-item" id="nil-deal-tracking">
+                    <a class="nav-link" href="/pages/nil-deal-tracking.html">NIL Deal Tracking</a>
+                  </li>
+                  <li class="nav-item" id="stats">
+                    <a class="nav-link" href="/pages/stats.html">Stats</a>
+                  </li>
+                  <li class="nav-item" id="player-profile">
+                    <a class="nav-link" href="/pages/player-profile.html">Player Profiles</a>
+                  </li>
+                  <li class="nav-item" id="teams-schools">
+                    <a class="nav-link" href="/pages/teams-schools.html">Teams & Schools</a>
+                  </li>
+                  <li class="nav-item" id="news">
+                    <a class="nav-link" href="/pages/news.html">News</a>
+                  </li>
+                  <li class="nav-item" id="events">
+                    <a class="nav-link" href="/pages/events.html">Events</a>
+                  </li>
+                  <li class="nav-item" id="submit-your-tape">
+                    <a class="nav-link" href="/pages/submit-your-tape.html">Submit Your Tape</a>
+                  </li>
+                  <li class="nav-item" id="merch">
+                    <a class="nav-link" href="/pages/merch.html">Merch</a>
+                  </li>
+               </ul>
+             </div>
+           </nav>
+         </div>
+       </div>
+   
+
+
+  <!-- overlay content -->
+  <div class=main-content>
+    <div class=hero-card>
+     <!--   <div class=logo-container><img class="img-fluid logo" alt="Z0N3 Logo" src=/assets/Zon3-logo.png></div>  -->
+      <h1 class="tagline">COMING SOON</h1>
+      <p class="description pt-1">Stay tuned—content is being prepared.</p>
+    </div>
+  </div>
+
+
+
+  <!-- Footer section -->
+  <div class="text-white bg-dark footer py-2 text-center" style=font-size:13px>© 2025 Z0N3 Sports | All Rights Reserved.</div>
+
+
+   <script>
+   // navbar item active color js
+   document.addEventListener("DOMContentLoaded", function() {
+     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+     const navItems = document.querySelectorAll('.nav-item');
+     navItems.forEach(item => {
+       const link = item.querySelector('a').getAttribute('href').split('/').pop();
+       if (link === currentPath) {
+         item.querySelector('a').classList.add('active');
+       }
+     });
+   });
+   </script>
+   
+       <!-- Option 1: Bootstrap Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+   
+     </body>
+   </html>

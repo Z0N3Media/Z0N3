@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=UTF-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+
+  <!-- site title -->
+  <title>Z0N3 | Where Future Stars Get Seen First</title>
+  <!-- css and font link -->
+  <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css rel=stylesheet>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;600&display=swap" rel=stylesheet>
+  <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css rel=stylesheet>
+  <!-- main css -->
+   <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+
+
+<!------------------------------------------ Navbar section ------------------------->
+<div class="Navbarr navbar-light">
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+           <!-- Navbar items -->
+          <li class="nav-item" id="home">
+            <a class="nav-link" ainteresta-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item" id="rankings">
+            <a class="nav-link" href="/pages/rankings.html">Rankings</a>
+          </li>
+          <li class="nav-item" id="top-zon3-players">
+            <a class="nav-link" href="/pages/top-zon3-players.html">Top Z0N3 Players</a>
+          </li>
+          <li class="nav-item" id="nil-deal-tracking">
+            <a class="nav-link" href="/pages/nil-deal-tracking.html">NIL Deal Tracking</a>
+          </li>
+          <li class="nav-item" id="stats">
+            <a class="nav-link" href="/pages/stats.html">Stats</a>
+          </li>
+          <li class="nav-item" id="player-profile">
+            <a class="nav-link" href="/pages/player-profile.html">Player Profiles</a>
+          </li>
+          <li class="nav-item" id="teams-schools">
+            <a class="nav-link" href="/pages/teams-schools.html">Teams & Schools</a>
+          </li>
+          <li class="nav-item" id="news">
+            <a class="nav-link" href="/pages/news.html">News</a>
+          </li>
+          <li class="nav-item" id="events">
+            <a class="nav-link" href="/pages/events.html">Events</a>
+          </li>
+          <li class="nav-item" id="submit-your-tape">
+            <a class="nav-link" href="/pages/submit-your-tape.html">Submit Your Tape</a>
+          </li>
+          <li class="nav-item" id="merch">
+            <a class="nav-link" href="/pages/merch.html">Merch</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+
+
+<section class="hero-section">
+  <!--video section -->
+  <div class=video-container>
+    <video autoplay id=bg-video loop muted playsinline>
+      <source src="assets/bg-video.mp4" type=video/mp4>Your browser does not support HTML5 video.
+    </video>
+    <div class=video-overlay></div>
+  </div>
+  
+
+    <!-- overlay content -->
+  <div class=main-content>
+    <div class=hero-card>
+      <div class=logo-container><img class="img-fluid logo" alt="Z0N3 Logo" src=assets/Zon3-logo.png></div>
+      <h1 class="pt-3 tagline">ARE YOU IN THE Z0N3?</h1>
+      <p class="description pt-1">Z0N3 is where future stars get seen first. A digital sports media platform spotlighting youth and high school athletes — with verified rankings, NIL deal tracking, exclusive drops, and real stories. More than stats — it's culture.</p>
+      <form action=https://formsubmit.co/4386fa278d0485296c2e00662921d4c5 class=notify-form id=notifyForm method=POST>
+        <input name=_subject type=hidden value="New Z0N3 Subscriber!"> 
+        <input name=_template type=hidden value=table>
+        <input name=_from type=hidden value="ZON3 <sukurali01754557277@gmail.com>"> 
+        <input name=_captcha type=hidden value=false>
+        <div class="input-group py-3">
+          <input name=email type=email class=form-control placeholder="Your email address" required> 
+          <button class="btn btn-notify" type=submit>Join Us</button>
+        </div>
+      </form>
+      <div class=social-links>
+        <a aria-label=Instagram href="https://www.instagram.com/zon3.co/?igsh=dWtkN28yem1kd2tm&utm_source=qr#" target=_blank><i class="fab fa-instagram"></i></a> 
+        <a aria-label=TikTok href="https://www.tiktok.com/@zon3media?_t=ZT-8waPdFOQv98&_r=1" target=_blank><i class="fab fa-tiktok"></i></a>
+        <span class=info-trigger data-bs-target=#socialInfoModal data-bs-toggle=modal style=cursor:pointer>
+          <a><i class="text-white fa-circle-question fa-regular"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  <!-- About us Modals -->
+  <div class="fade modal success-modal" aria-hidden=true id=successModal tabindex=-1>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class=modal-content>
+        <div class=modal-header>
+          <h5 class=modal-title style=color:var(--primary)>Welcome to Z0N3!</h5>
+          <button class=btn-close type=button data-bs-dismiss=modal aria-label=Close></button>
+        </div>
+        <div class=modal-body>
+          <i class="fas fa-check-circle" style=font-size:3rem;color:var(--primary);margin-bottom:1rem></i>
+          <p>Thanks for joining us! We'll be in touch soon.
+        </div>
+        <div class=modal-footer>
+          <button class="btn btn-notify" type=button data-bs-dismiss=modal>Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="fade modal" aria-hidden=true id=socialInfoModal tabindex=-1>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class=modal-content>
+        <div class=modal-header>
+          <h5 class=modal-title>About Z0N3</h5>
+          <button class=btn-close-custom type=button data-bs-dismiss=modal aria-label=Close>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class=modal-body>
+          <p>Z0N3 is where future stars get seen first. We're not just covering youth and high school athletes — we're building the stage they deserve. From Recaps, highlights and verified rankings to NIL deals and exclusive drops, Z0N3 is where talent meets culture, and visibility turns into value. For athletes, it's exposure. For brands, it's access to the next generation — before the hype hits.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <div class="text-white bg-dark footer py-2 text-center" style=font-size:13px>© 2025 Z0N3 Sports | All Rights Reserved.</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const notifyForm = document.getElementById('notifyForm');
+      const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+
+      if (notifyForm) {
+        notifyForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const formData = new FormData(notifyForm);
+          const btn = notifyForm.querySelector('button');
+          const originalText = btn.innerHTML;
+
+          // Validate
+          if (!formData.get('email') || !formData.get('email').includes('@')) {
+            alert('Please enter a valid email address');
+            return;
+          }
+
+          // Show loading
+          btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+          btn.disabled = true;
+
+          // Create hidden iframe for submission
+          const iframe = document.createElement('iframe');
+          iframe.name = 'hidden-iframe';
+          iframe.style.display = 'none';
+          document.body.appendChild(iframe);
+
+          // Submit form to iframe
+          notifyForm.target = 'hidden-iframe';
+          notifyForm.submit();
+
+          // Show success and clean up
+          successModal.show();
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            notifyForm.reset();
+            document.body.removeChild(iframe);
+          }, 1500);
+        });
+      }
+    });
+  </script>
+
+  <script>
+     
+    // navbar item active color js
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+      const navItems = document.querySelectorAll('.nav-item');
+      navItems.forEach(item => {
+        const link = item.querySelector('a').getAttribute('href').split('/').pop();
+        if (link === currentPath) {
+          item.querySelector('a').classList.add('active');
+        }
+      });
+    });
+    </script>
+
+    <!-- js link -->
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js></script>
+  
+</body>
+</html>
